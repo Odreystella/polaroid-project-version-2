@@ -1,0 +1,299 @@
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css?family=Gugi:400');
+
+.a11y-hidden {
+  margin-top: 0;
+  height: 0;
+  background-color: violet;
+  overflow: hidden;
+}
+
+body *, body::before, body::after {
+  margin: 0 auto;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Gugi', cursive;
+  font-size: 13px;
+}
+
+.header {
+  position: relative;
+  height: 15vh;
+  background-color: #090909;
+}
+
+.header-logo {
+  position: absolute;
+  top: 23px;
+  left: 23px;
+  width: 60px;
+  height:70px;
+}
+
+.header-logo img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header-nav {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  font-size: 17px;
+}
+
+.logout button{
+  position: relative;
+  top: 10px;
+  color: #E6E5E6;
+  border:none;
+  border-bottom: 1px solid #E6E5E6;
+  background-color: #090909;
+}
+
+.main::before {
+  position: absolute;
+  display: block;
+  content: "";
+  top: 13%;
+  width: 100%;
+  height: 3px;
+  z-index: 0;
+  background-color: #E6E5E6;
+}
+
+.main {
+  position: relative;
+  display: flex;
+  height: 70vh;
+  background-color: #C93F60;
+}
+
+.main-greeting {
+  position:absolute;
+  top: -12.5vh;
+  right: calc(50% - 158px);
+  color: #e7ecee;
+}
+
+.main-greeting-hello {
+  font-size: 2.5rem;
+}
+
+.input-name {
+  display: block;
+  font-size: 18px;
+  line-height: 1.3333;
+  color: #E6E5E6;
+  border: none;
+  border-bottom: 2px solid #E6E5E6;
+  outline: none;
+  background: transparent;
+}
+
+.input-name::placeholder{
+  text-align: center;
+  color: #E6E5E6;
+}
+
+.polaroid-slider {
+  position: relative;
+  margin: auto;
+  width: 1110px;
+  height: 550px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.polaroids {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 2280px;
+  transform: translateY(-50%);
+  transition: 0.5s ease-out;
+}
+
+.polaroid {
+  position: relative;
+  float: left;
+  margin-right: 30px;
+  padding: 30px 25px;
+  width: 350px;
+  height: 450px;
+  border-radius: 5px;
+  background-color: #E6E5E6;
+  transition: 0.5s ease-out;
+}
+
+.polaroid.active{
+  transform : translateY(100%);
+  transition: 0.5s ease-out;
+}
+
+.polaroid-image {
+  width: 300px;
+  height: 300px;
+  background-color: #E69C88;
+  overflow: hidden;
+}
+
+.image-view {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.polaroid-form {
+  padding-top: 15px;
+  height: 90px;
+  font-size: 1.3em;
+  text-align: justify;
+}
+
+.polaroid-form input{
+  float: right;
+  border: none;
+  border-radius: 5px;
+  color: black;
+}
+
+.form-location {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.location-input{
+  position: relative;
+  top: 4px;
+}
+
+.heart {
+  position: absolute;
+  right: 37px;
+  bottom: 130px;
+  width: 30px;
+  height:27px;
+  object-fit: cover;
+  z-index: 30;
+}
+
+.heart:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.heart.active{
+  border: none;
+}
+
+.delete-button {
+  position: absolute;
+  top: -50px;
+  right: calc(50% - 15px);
+  width: 30px;
+  height: 70px;
+  border: none;
+  border-radius: 3px;
+  z-index: 50;
+  background-color: #D8B270;
+}
+
+.footer {
+  height: 15vh;
+  width: 100%;
+  background-color: #090909;
+}
+
+.footer address{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 auto;
+  color: #E6E5E6;
+}
+
+.carousel-left:focus {
+  outline: 0;
+}
+
+.carousel-left:hover {
+  color: #090909;
+  opacity: 0.5;
+  transition: 0.3s;
+  background-color: #E6E5E6;
+}
+
+.carousel-right:focus {
+  outline: 0;
+}
+
+.carousel-right:hover {
+  color: #090909;
+  opacity: 0.5;
+  transition: 0.3s;
+  background-color: #E6E5E6;
+}
+
+.carousel-left {
+  position: absolute;
+  left: 10px;
+  bottom: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #e7ecee;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+
+.carousel-right {
+  position: absolute;
+  right: 10px;
+  bottom: 50%;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #e7ecee;
+  border: none;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  outline: 0;
+}
+
+@media all and (min-width: 1951px) {
+  .polaroid-slider {
+    width: 1870px
+  }
+}
+
+@media all and (min-width: 1551px) and (max-width: 1950px) {
+  .polaroid-slider {
+    width: 1490px;
+  }
+}
+
+@media all  and (min-width: 1251px) and (max-width: 1550px) {
+  .polaroid-slider {
+    width: 1110px;
+  }
+}
+
+@media all and (min-width: 901px) and (max-width: 1250px) {
+  .polaroid-slider {
+    width: 730px;
+  }
+}
+
+@media all and (max-width: 900px) {
+  .polaroid-slider {
+    width: 380px;
+  }
+}

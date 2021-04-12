@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>polaroid_project_version2</title>
+  <script src="https://kit.fontawesome.com/bb1e4b6180.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/uploadImage.js"></script>
+  <script defer src="js/inputName.js"></script>
+  <script defer src="js/remove.js"></script>
+  <script defer src="js/animations.js"></script>
+  <script defer src="js/carousel.js"></script>
+</head>
+<body>
+  <header class="header">
+    <h1 class="header-logo">
+      <img src="images/camera-pink.png" alt="logo">
+    </h1>
+    <ul class="header-nav">
+      <li class="logout"><button>로그아웃</button></li>
+    </ul>
+  </header>
+  <main class="main">
+    <form class="main-greeting">
+      <h2 class="main-greeting-hello">Hi</h2>
+      <input class="input-name" type="text" placeholder="이름을 입력하세요" maxlength="10">
+    </form>
+    <section class="polaroid-slider">
+      <h2 class="a11y-hidden">polaroid slider</h2>
+      <div class="polaroids">
+        <div class="polaroid polaroid1">
+          <div class="polaroid-image image1">
+            <form class="polaroid-image-form">
+              <input type="file" class="image-input image-input1">
+            </form>
+            <img class="image-view image-view1" src="#" alt="image1">
+          </div>
+          <div class="polaroid-form polaroid-form1">
+            <form class="date-form">
+              <span class="date-text">날짜</span>
+              <input type="text" class="polaroid-form-date" placeholder="yy.mm.dd">
+            </form>
+            <form class="location-form">
+              <span class="location-text form-location">위치</span>
+              <input type="text" class="polaroid-form-location location-input" placeholder="seoul">
+            </form>
+            <form class="comment-form">
+              <span class="comment-text">메모</span>
+              <input type="text" class="polaroid-form-comment" placeholder="#봄 #미세먼지">
+            </form>
+          </div>
+          <img class="heart heart1" src="images/heartOff.png" alt="heart"> <!--하트-->
+          <button class="delete-button delete-button1">X</button>
+        </div>
+      </div>
+    </section>
+      <button class="carousel-left">&lt;</button>
+      <button class="carousel-right">></button>
+  </main>
+  <footer class="footer">
+    <address>Copyright&copy; 2021 odreystella</address>
+  </footer>
+</body>
+</html>

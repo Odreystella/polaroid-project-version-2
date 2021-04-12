@@ -7,7 +7,7 @@ refactoring polaroid_project
 ### PROJECT LOG
 * Day1
     * remove repetitous codes
-    * 
+    * tag of heart animation changed img to button 
     * 
 
 
